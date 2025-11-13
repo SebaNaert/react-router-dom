@@ -9,6 +9,7 @@ import Marques from "./components/Marques";
 import NewCar from "./components/NewCar";
 import NotFound from "./components/NotFound";
 import Car from "./components/car";
+import Marque from "./components/Marque";
 
 const MyApp = () => (
   <Router>
@@ -18,6 +19,7 @@ const MyApp = () => (
       <Route path='cars' element={<Cars />} />
       <Route path="cars/new" element={<NewCar />} />
       <Route path='marques' element={<Marques />} />
+      <Route path='marques/:brand' element={<Marque />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>
