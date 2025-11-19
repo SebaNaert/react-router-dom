@@ -1,6 +1,7 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 
-const Marques = (props) => {
+const Marque = (props) => {
     let { brand } = useParams();
     return ( 
         <>
@@ -9,4 +10,4 @@ const Marques = (props) => {
      );
 }
  
-export default Marques;
+export default Marque;
